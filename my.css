@@ -12,6 +12,7 @@ body{
     flex-direction: column;
 }
 
+/* This is for the navbar on the top*/
 .nav_bar{
     position: relative;
     background-color: aliceblue;
@@ -26,7 +27,7 @@ body{
     align-items: center;
 }
 
-li,a,h1{
+.nav_bar a{
 font-family: "Source Code Pro", 'Times New Roman', Times, serif;
 font-weight: 500;
 font-size: 18px;
@@ -48,6 +49,7 @@ color: black;
     padding: 0 15px;
 }
 
+/*This is for the main landing page of the website */
 main{
     flex: 1 0 auto;
     display: block;
@@ -55,11 +57,36 @@ main{
 }
 
 .lander_page_des{
-    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lander_page_des article{
     align-content: center;
 }
 
+.lander_page_des img{
+    height: auto;
+    width: 200px;
+}
 
+.blog_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(100px,auto));
+    gap: 15px;
+}
+
+.grid_item{
+    background-color: aliceblue;
+}
+
+.grid_item img{
+    height: auto;
+    width: 100%;
+}
+
+/*This is for the footer that will be on every page of the website */
 
 footer{
     width: 100%;
