@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Source+Sans+3:ital@0;1&display=swap');
 
 * {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
+}
+
+/*Variable for Colors*/
+*{
+    --main_bg_color: #353535;
+    --nav_bar_color: #3c6e71;
+    --less_gray: #d9d9d9;
+    --darker_blue: #284b63;
 }
 
 body{
@@ -15,7 +23,7 @@ body{
 /* This is for the navbar on the top*/
 .nav_bar{
     position: relative;
-    background-color: aliceblue;
+    background-color: var(--main_bg_color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,15 +36,19 @@ body{
 }
 
 .nav_bar a{
-font-family: "Source Code Pro", 'Times New Roman', Times, serif;
-font-weight: 500;
-font-size: 18px;
-color: black;
+    font-family: "Source Code Pro", 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--less_gray);
 }
 
 .happy_face{
     height: 100px;
     width: 150px;
+}
+
+.happy_face:hover{
+    cursor: pointer;
 }
 
 .header_nav{
@@ -45,29 +57,42 @@ color: black;
 
 .header_nav li{
     display: inline-flex;
-    justify-content: right;
     padding: 0 15px;
 }
 
 /*This is for the main landing page of the website */
 main{
-    flex: 1 0 auto;
     display: block;
     padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--main_bg_color);
+}
+
+main h1{
+    font-family: "Source Code Pro", 'Times New Roman', Times, serif;
+    color: var(--less_gray);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .lander_page_des{
     display: flex;
     justify-content: space-between;
+    color: var(--less_gray);
 }
 
 .lander_page_des article{
     align-content: center;
+    font-family: "Source Sans 3";
+    font-size: 18px;
 }
 
 .lander_page_des img{
     height: auto;
-    width: 200px;
+    width: 10%;
+    border: none;
+    border-radius: 50px;
 }
 
 .blog_grid{
@@ -78,7 +103,15 @@ main{
 }
 
 .grid_item{
-    background-color: aliceblue;
+    background-color: var(--darker_blue);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-family: "Source Sans 3";
+}
+
+.grid_item a,time{
+    color: var(--less_gray);
 }
 
 .grid_item img{
@@ -89,10 +122,9 @@ main{
 /*This is for the footer that will be on every page of the website */
 
 footer{
+    flex: 1 0 auto;
     width: 100%;
-    margin-top: 10px;
-    background-color:aliceblue;
-    align-content: center;
+    background-color: var(--nav_bar_color);
 }
 
 .footer_links{
@@ -103,5 +135,7 @@ footer{
 }
 
 .footer_tech{
+    color: var(--less_gray);
+    font-family: "Source Sans 3";
     padding: 0px 20px 20px 20px;
 }
