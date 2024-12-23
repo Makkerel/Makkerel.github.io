@@ -16,6 +16,7 @@ padding: 0;
 
 body{
     min-height: 100vh;
+    min-width: fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -128,7 +129,7 @@ main h1{
 .blog_grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, minmax(10%,auto));
+    grid-template-rows: repeat(1, minmax(100px,auto));
     gap: 15px;
 }
 
