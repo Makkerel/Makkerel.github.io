@@ -128,7 +128,7 @@ main h1{
 .blog_grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, minmax(100px,auto));
+    grid-template-rows: repeat(1, minmax(10%,auto));
     gap: 15px;
 }
 
