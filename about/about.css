@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Source+Sans+3:ital@0;1&display=swap');
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+/*Variable for Colors*/
+*{
+    --main_bg_color: #353535;
+    --nav_bar_color: #3c6e71;
+    --less_gray: #d9d9d9;
+    --darker_blue: #284b63;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* This is for the navbar on the top*/
+.nav_bar{
+    position: relative;
+    background-color: var(--main_bg_color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.nav_bar header{
+    display: flex;
+    align-items: center;
+}
+
+.nav_bar a{
+    font-family: "Source Code Pro", 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--less_gray);
+}
+
+.happy_face{
+    height: 100px;
+    width: 150px;
+}
+
+.happy_face:hover{
+    cursor: pointer;
+}
+
+.header_nav{
+    list-style: none;
+}
+
+.header_nav li{
+    display: inline-flex;
+    padding: 0 15px;
+}
+
+.divider{
+    width: 100%;
+    border: solid var(--less_gray) 0.5px;
+}
+
+/*Main Stylings*/
+main{
+    background-color: var(--main_bg_color);
+    color: var(--less_gray);
+    flex: 1;
+    font-family: "Source Sans 3", 'Times New Roman', Times, serif;
+    display: block;
+    padding: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_text{
+    display: block;
+}
+
+.about_me{
+    font-size: 3em;
+}
+
+.clown_face{
+    padding: 2em;
+    height: 30em;
+    width: auto;
+}
+
+.hobbies{
+    font-size: 2em;
+    margin-top: 0.1em;  
+    margin-bottom: 0.1em;
+}
+
+main p{
+    font-size: 20px;
+}
+
+/* Footer */
+footer{
+    padding-top: 1em;
+    width: 100%;
+    background-color: var(--nav_bar_color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.center_container{
+    display: block;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: center;
+}
+.footer_links a{
+    padding: 20px;
+}
+
+.footer_links .linkedin{
+    height: 30px;
+    margin-top: 20%;
+    filter: invert(1);
+}
+
+.footer_links .github{
+    height: 30px;
+    margin-top: 20%;
+    filter: invert(1);
+}
+
+.footer_tech{
+    color: var(--less_gray);
+    font-family: "Source Sans 3";
+    padding: 0px 20px 20px 20px;
+}
