@@ -40,6 +40,12 @@ body{
     font-weight: 500;
     font-size: 18px;
     color: var(--less_gray);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.nav_bar a:hover{
+    opacity: 1;
 }
 
 .happy_face{
@@ -93,7 +99,7 @@ main{
     width: auto;
 }
 
-.hobbies{
+.headings{
     font-size: 2em;
     margin-top: 0.1em;  
     margin-bottom: 0.1em;
