@@ -77,7 +77,6 @@ main{
     color: var(--less_gray);
     flex: 1;
     font-family: "Source Sans 3", 'Times New Roman', Times, serif;
-    display: block;
     padding: 20px;
     padding-left: 15%;
     padding-right: 15%;
@@ -95,6 +94,7 @@ main{
 
 .clown_face{
     padding: 2em;
+    padding-top: 0px;
     height: 30em;
     width: auto;
 }
@@ -107,6 +107,31 @@ main{
 
 main p{
     font-size: 20px;
+}
+
+.job_stuff{
+    display: flex;
+    margin-top: 2em;
+}
+
+.job_stuff a{
+    font-family: 'Source Code Pro','Times New Roman', Times, serif;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: var(--less_gray);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.job_stuff a:hover{
+    background-color: var(--less_gray);
+    color: var(--main_bg_color);
+}
+
+.resume{
+    margin-left: 2em;
 }
 
 /* Footer */

@@ -120,19 +120,6 @@ main h1{
     display: flex;
 }
 
-.email{
-    height: 50px;
-    margin-top: 15%;
-    filter: invert(1);
-    padding-left: 1em;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.email:hover{
-    opacity: 1;
-}
-
 .github{
     height: 50px;
     margin-top: 20%;
