@@ -18,6 +18,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--main_bg_color);
 }
 
 /* This is for the navbar on the top*/
@@ -70,69 +71,45 @@ body{
     width: 100%;
     border: solid var(--less_gray) 0.5px;
 }
-
-/*Main Stylings*/
+/* Blogging */
 main{
     background-color: var(--main_bg_color);
     color: var(--less_gray);
     flex: 1;
     font-family: "Source Sans 3", 'Times New Roman', Times, serif;
+    font-size: 16px;
     padding: 20px;
-    padding-left: 15%;
-    padding-right: 15%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.about_text{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
+    word-wrap: break-word;
 }
 
-.about_me{
-    font-size: 3em;
+main h1{
+    font-size: 2.5em;
 }
 
-.clown_face{
-    padding: 2em;
-    padding-top: 0px;
-    height: 30em;
-    width: auto;
-}
-
-.headings{
-    font-size: 2em;
-    margin-top: 0.1em;  
-    margin-bottom: 0.1em;
+main h2{
+    font-size: 1.8em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 main p{
     font-size: 20px;
+    line-height: 1.5em;
 }
 
-.job_stuff{
+.top_img{
     display: flex;
-    margin-top: 2em;
+    justify-content: center;
 }
 
-.job_stuff a{
-    font-family: 'Source Code Pro','Times New Roman', Times, serif;
-    font-size: 1.8em;
-    text-decoration: none;
-    color: var(--less_gray);
-    border-style: solid;
-    border-radius: 10px;
-    padding: 15px;
-    transition: all 0.3s ease;
+.top_img img{
+    width: 60%;
 }
 
-.job_stuff a:hover{
-    background-color: var(--less_gray);
-    color: var(--main_bg_color);
-}
-
-.resume{
-    margin-left: 2em;
-}
 
 /* Footer */
 footer{
