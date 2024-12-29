@@ -12,6 +12,7 @@ padding: 0;
     --nav_bar_color: #3c6e71;
     --less_gray: #d9d9d9;
     --darker_blue: #284b63;
+    --code_bg: #282828;
 }
 
 body{
@@ -79,7 +80,7 @@ main{
     font-family: "Source Sans 3", 'Times New Roman', Times, serif;
     font-size: 16px;
     padding: 20px;
-    width: 700px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -96,9 +97,33 @@ main h2{
     margin-bottom: 0.5em;
 }
 
+main h3{
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 main p{
     font-size: 20px;
     line-height: 1.5em;
+}
+
+main a{
+    color: var(--less_gray);
+}
+
+main pre{
+    background-color: var(--code_bg);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: solid;
+    border-color: var(--less_gray);
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+main code{
+    font-family: "Source Code Pro";
 }
 
 .top_img{
@@ -107,7 +132,7 @@ main p{
 }
 
 .top_img img{
-    width: 60%;
+    max-width: 60%;
 }
 
 

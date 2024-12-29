@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Making a Website with No Frameworks</title>
+    <title>Making a Website From Scratch</title>
     <link rel="stylesheet" href="blog.css">
 </head>
 <body>
@@ -26,13 +26,40 @@
         </div>
         <h1>Making a Website with No Frameworks</h1>
         <time datetime="2024-12-20">December 20, 2024</time>
-        <h2>The Setup</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <h2>The Html</h2>
-        <p>asdasd</p>
+        <p>Making a website on the internet nowadays seems quite difficult without some tools to really help you get started. There are a lot of websites that have the primary goal helping you make websites. 
+            Websites like Wix.com and Squarespace seemingly giving you a quick way to make a good website fast. I will say that if you want a good website fast and are willing to be pay these do seem like good options. 
+            They even have a bunch of other services for these websites that may be useful for professionals. However, these websites kind of abstract away what is really happening and somewhat ties you to their platform. 
+            If you really want to learn how to make a website from scratch you&#39;re gonna need to program some html,css, and javascript. 
+            This blog will be about writing a static website meaning that you will not really gonna have anything like user accounts which are too advanced for this blog. 
+            I will be talking about a super easy way to host a static website and some tips on programming the website.</p>
+        <h2 id="the-setup">The Setup</h2>
+        <p>To get started you&#39;re gonna need you&#39;re gonna need three things a GitHub account, git, and a code editor. 
+            The GitHub account is allows you to create a <a href="https://pages.github.com/">GitHub Pages</a> which is a free way to actually host your static website on the internet. 
+            Also if you ever want to do more programming in the future a GitHub account will practically be necessary.
+             The code editor I recommend is <a href="https://code.visualstudio.com/">Vscode</a> as it has a lot of support for html, css, and javascript out of the box and integration with git that will be useful for GitHub pages. 
+             Git is far more useful than what we&#39;re gonna use for this project but in this case it will just help us upload to GitHub.</p>
+        <h3 id="git">Git</h3>
+        <p>Once you have made a <a href="https://github.com/join">GitHub account</a> the next thing to do is to install <a href="https://git-scm.com/downloads">git</a> and configure it. 
+            When installing just use all default options. Now you must configure git so that it is connected to your GitHub account. 
+            Open git bash on Windows or terminal on macOS and set this:</p>
+        <pre><code class="language-shell">git config --global user.name &quot;Your Name&quot;</code></pre>
+        <p>This will set your user name in git that can be anything. 
+            This username is completely different from your username on GitHub and does not have to be the same. 
+            Make sure you have quotation marks to make sure it works. Now comes the more important part.</p>
+        <pre><code class="language-shell">git config --global user.email emailgithub@email.com</code></pre>
+        <p>You <strong>must</strong> set this with the same email that you used to create your github account. 
+            It is how the git on your computer knows which GitHub account to tie your local to. You can check if you did both correct with:</p>
+        <pre><code class="language-shell">git config --global user.name<br>git config --global user.email</code></pre>
+        <p>The output for both is what you put originally then you are fine.</p>
+        <h3 id="github-pages">GitHub Pages</h3>
+        <p>Now you should be able to follow the short guide on <a href="https://pages.github.com">GitHub Pages</a>. 
+            If you are on windows make sure to do all the terminal instructions on Git Bash. If everything works you should now have your very own personal static website that you will be able to modify. </p>
+        <h3 id="vscode">VSCode</h3>
+        <p>Once you have VSCode installed you should be able to just open the folder the contains your git repo. 
+            The name of the folder should be called <code>yourusername.github.io</code> unless you have decided to change it. 
+            If there is a popup on whether to trust the authors just click yet to to trusting the authors since the author is you. 
+            Furthermore, there is a <a href="https://code.visualstudio.com/docs/sourcecontrol/overview">GitHub tab</a> which gives you a really nice UI for committing and pushing your changes to Github. 
+            The setup is now complete.</p>
     </main>
     <footer>
         <div class="center_container">
