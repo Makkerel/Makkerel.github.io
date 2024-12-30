@@ -72,6 +72,7 @@ body{
 }
 
 /*Main Stylings*/
+
 main{
     background-color: var(--main_bg_color);
     color: var(--less_gray);
@@ -94,7 +95,7 @@ main{
 
 .clown_face{
     padding: 2em;
-    padding-top: 0px;
+    padding-top: 4em;
     height: 30em;
     width: auto;
 }
@@ -109,9 +110,38 @@ main p{
     font-size: 20px;
 }
 
-.job_stuff{
-    display: flex;
-    margin-top: 2em;
+@media screen and (min-width: 320px){
+    .job_stuff{
+        display: flex;
+        flex-direction: column;
+    }
+    .job_stuff a{
+        margin-top: 1em;
+    }
+
+    main{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .job_stuff{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
+    }
+
+    .job_stuff a{
+        margin-top: 0;
+    }
+
+    .resume{
+        margin-left: 2em;
+    }
+
+    main{
+        flex-direction: row;
+    }
 }
 
 .job_stuff a{
@@ -128,10 +158,6 @@ main p{
 .job_stuff a:hover{
     background-color: var(--less_gray);
     color: var(--main_bg_color);
-}
-
-.resume{
-    margin-left: 2em;
 }
 
 /* Footer */
