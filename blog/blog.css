@@ -112,7 +112,7 @@ main a{
     color: var(--less_gray);
 }
 
-main pre{
+main .code_block{
     background-color: var(--code_bg);
     margin-top: 0.5em;
     margin-bottom: 0.5em;
