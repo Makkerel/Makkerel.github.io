@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Source+Sans+3:ital@0;1&display=swap');
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+/*Variable for Colors*/
+*{
+    --main_bg_color: #373737;
+    --nav_bar_color: #3c6e71;
+    --less_gray: #edecec;
+    --darker_blue: #284b63;
+    --brighter_blue: #2e5f7f;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main_bg_color);
+}
+
+/* This is for the navbar on the top*/
+.nav_bar{
+    position: relative;
+    background-color: var(--main_bg_color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.nav_bar header{
+    display: flex;
+    align-items: center;
+}
+
+.nav_bar a{
+    font-family: "Source Code Pro", 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--less_gray);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.nav_bar a:hover{
+    opacity: 1;
+}
+
+.happy_face{
+    height: 100px;
+    width: 150px;
+}
+
+.happy_face:hover{
+    cursor: pointer;
+}
+
+.header_nav{
+    list-style: none;
+}
+
+.header_nav li{
+    display: inline-flex;
+    padding: 0 15px;
+}
+
+.divider{
+    width: 100%;
+    border: solid var(--less_gray) 0.5px;
+}
+
+/*This is for the main landing page of the website */
+
+main{   
+    padding: 40px;
+    flex: 1;
+    font-family: "Source Sans 3",'Times New Roman', Times, serif;
+    color: var(--less_gray);
+    font-size: 20px;
+}
+
+main ul{
+    list-style: none;
+}
+
+main h1{
+    margin-bottom: 10px;
+}
+
+main h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tag_grid{
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(3em,auto));
+    column-gap: 2em;
+    row-gap: 1em;
+}
+
+@media screen and (min-width: 500px) {
+    .tag_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, minmax(1em,auto));
+        column-gap: 10em;
+    }    
+}
+
+.tag{
+    padding: 10px;
+    padding-left: 0px;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--main_bg_color);
+    opacity: 0.8;
+    transition: opacity 0.3s ease-out;
+}
+
+.tag a{
+    font-family: "Source Code Pro", 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: var(--less_gray);
+}
+
+.tag:hover{
+    opacity: 1;
+}
+
+main li{
+    margin: 30px 0px;
+}
+
+main article{
+    display: flex;
+    flex-direction: column; 
+}
+
+main article time{
+    font-size: 17px;
+}
+
+main ul a{
+    font-size: 23px;
+    color: var(--less_gray);
+}
+
+/*This is for the footer that will be on every page of the website */
+
+footer{
+    padding-top: 1em;
+    width: 100%;
+    background-color: var(--nav_bar_color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.center_container{
+    display: block;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: center;
+}
+.footer_links a{
+    padding: 20px;
+}
+
+.footer_links .linkedin{
+    height: 30px;
+    margin-top: 20%;
+    filter: invert(1);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.linkedin:hover{
+    opacity: 1;
+}
+
+.footer_links .github{
+    height: 30px;
+    margin-top: 20%;
+    filter: invert(1);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.github:hover{
+    opacity: 1;
+}
+
+.footer_tech{
+    color: var(--less_gray);
+    font-family: "Source Sans 3";
+    padding: 0px 20px 20px 20px;
+}
