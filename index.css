@@ -19,6 +19,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--main_bg_color);
 }
 
 /* This is for the navbar on the top*/
@@ -74,12 +75,12 @@ body{
 }
 
 main{
+    max-width: 1000px;
+    margin: 0 auto;
     flex: 1;
     font-family: "Source Sans 3", 'Times New Roman', Times, serif;
     display: block;
-    padding: 20px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 50px;
     background-color: var(--main_bg_color);
 }
 

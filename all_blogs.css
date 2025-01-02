@@ -9,10 +9,11 @@ padding: 0;
 /*Variable for Colors*/
 *{
     --main_bg_color: #373737;
-    --nav_bar_color: #3c6e71;
+    --footer_color: #3c6e71;
     --less_gray: #edecec;
     --darker_blue: #284b63;
     --brighter_blue: #2e5f7f;
+    --blog_link_blue: #42d9e1;
 }
 
 body{
@@ -75,7 +76,9 @@ body{
 
 /*This is for the main landing page of the website */
 
-main{   
+main{
+    max-width: 800px;
+    margin: 0 auto;
     padding: 40px;
     flex: 1;
     font-family: "Source Sans 3",'Times New Roman', Times, serif;
@@ -94,14 +97,16 @@ main h1{
 main h2{
     margin-top: 20px;
     margin-bottom: 20px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgba(237, 236, 236, 0.8);
 }
 
 .tag_grid{
-    max-width: 800px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, minmax(3em,auto));
-    column-gap: 2em;
+    column-gap: 10%;
     row-gap: 1em;
 }
 
@@ -110,7 +115,6 @@ main h2{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, minmax(1em,auto));
-        column-gap: 10em;
     }    
 }
 
@@ -140,7 +144,7 @@ main li{
 
 main article{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 main article time{
@@ -149,7 +153,14 @@ main article time{
 
 main ul a{
     font-size: 23px;
-    color: var(--less_gray);
+    text-decoration: none;
+    color: var(--blog_link_blue);
+    opacity: 0.85;
+    transition: opacity 0.35s ease;
+}
+
+main ul a:hover{
+    opacity: 1;
 }
 
 /*This is for the footer that will be on every page of the website */
@@ -157,7 +168,7 @@ main ul a{
 footer{
     padding-top: 1em;
     width: 100%;
-    background-color: var(--nav_bar_color);
+    background-color: var(--footer_color);
     text-align: center;
     display: flex;
     justify-content: center;
