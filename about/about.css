@@ -111,12 +111,18 @@ main p{
 }
 
 @media screen and (min-width: 320px){
+    .all_contact{
+        display: flex;
+        flex-direction: column;
+    }    
+
     .job_stuff{
         display: flex;
         flex-direction: column;
     }
-    .job_stuff a{
-        margin-top: 1em;
+
+    .all_contact a{
+        margin-top: 15px;
     }
 
     main{
@@ -125,18 +131,22 @@ main p{
 }
 
 @media screen and (min-width: 500px){
+    .all_contact{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        align-items: center;
+    }    
+
     .job_stuff{
         display: flex;
         flex-direction: row;
-        margin-top: 2em;
+        justify-content: space-evenly;
     }
 
-    .job_stuff a{
+    .all_contact a{
         margin-top: 0;
-    }
-
-    .resume{
-        margin-left: 2em;
+        margin-right: 1em;
     }
 
     main{
@@ -160,6 +170,18 @@ main p{
     color: var(--main_bg_color);
 }
 
+.linkedin{
+    height: 50px;
+    filter: invert(1);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.linkedin:hover{
+    opacity: 1;
+}
+
+
 /* Footer */
 footer{
     padding-top: 1em;
@@ -180,18 +202,6 @@ footer{
 }
 .footer_links a{
     padding: 20px;
-}
-
-.footer_links .linkedin{
-    height: 30px;
-    margin-top: 20%;
-    filter: invert(1);
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.linkedin:hover{
-    opacity: 1;
 }
 
 .footer_links .github{
