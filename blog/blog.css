@@ -132,7 +132,12 @@ main code{
 }
 
 .top_img img{
-    max-width: 60%;
+    width: 70%;
+}
+
+/* Custom Image Sizes For Each Blog*/
+#core_keeper{
+    width: 100%;
 }
 
 
@@ -156,18 +161,6 @@ footer{
 }
 .footer_links a{
     padding: 20px;
-}
-
-.footer_links .linkedin{
-    height: 30px;
-    margin-top: 20%;
-    filter: invert(1);
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.linkedin:hover{
-    opacity: 1;
 }
 
 .footer_links .github{
