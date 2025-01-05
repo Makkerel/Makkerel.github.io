@@ -24,7 +24,6 @@ body{
 
 /* This is for the navbar on the top*/
 .nav_bar{
-    position: relative;
     background-color: var(--main_bg_color);
     display: flex;
     justify-content: space-between;
@@ -72,6 +71,54 @@ body{
     width: 100%;
     border: solid var(--less_gray) 0.5px;
 }
+
+.full_article{
+    display: flex;
+}
+
+/* Nav Menu Styling */
+
+@media screen and (min-width: 320px) {
+    .nav_menu{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .nav_menu{
+        display: block;
+    }
+}
+
+.nav_menu{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-family: "Source Code Pro", 'Times New Roman', Times, serif;
+    margin-left: auto;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav_menu h2{
+    color: var(--less_gray);
+    margin-bottom: 10px;
+}
+
+.nav_item{
+    border-left: solid;
+    border-color: var(--nav_bar_color);
+    margin-left: 15px;
+    padding: 10px;
+    padding-top: 0px;
+    max-width: 300px;
+}
+
+.nav_menu a{
+    color: var(--less_gray);
+    text-decoration: none;
+}
+
 /* Blogging */
 main{
     background-color: var(--main_bg_color);
@@ -81,10 +128,10 @@ main{
     font-size: 16px;
     padding: 20px;
     max-width: 800px;
-    margin-left: auto;
     margin-right: auto;
     display: block;
     word-wrap: break-word;
+    margin-bottom: 50px;
 }
 
 main h1{
