@@ -110,22 +110,11 @@ main h1{
 }
 
 .lander_page_des{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: var(--less_gray);
 }
 
 .lander_page_des article{
     font-size: 18px;
-}
-
-.lander_page_des .headshot{
-    height: 20%;
-    width: 15%;
-    border: none;
-    border-radius: 50px;
-    margin-left: 1em;
 }
 
 .quick_links{
