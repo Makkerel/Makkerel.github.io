@@ -153,6 +153,7 @@ main h3{
 main p{
     font-size: 20px;
     line-height: 1.5em;
+    margin-top: 1em;
 }
 
 main a{
@@ -175,18 +176,19 @@ main code{
 
 .top_img{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.top_img p{
+    font-size: small;
 }
 
 .top_img img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     width: 70%;
 }
-
-/* Custom Image Sizes For Each Blog*/
-#core_keeper{
-    width: 100%;
-}
-
 
 /* Footer */
 footer{
